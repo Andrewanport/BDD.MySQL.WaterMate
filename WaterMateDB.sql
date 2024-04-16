@@ -15,7 +15,7 @@ CREATE TABLE Meta_Manual (
 	Meta_Manual_ID INT AUTO_INCREMENT PRIMARY KEY
 );
 
-CREATE TABLE Meta_Automatica (
+CREATE TABLE Meta_Auto (
 	Meta_Automatica_ID INT AUTO_INCREMENT PRIMARY KEY
 );
 
