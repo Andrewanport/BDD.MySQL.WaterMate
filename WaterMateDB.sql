@@ -48,7 +48,7 @@ ALTER TABLE Registro_Consumo
     	ADD COLUMN Percentual_atingido FLOAT,
     	ADD COLUMN Streak INT,
     
-    	ADD COLUMN Registro_Consumo_ID INT,
+    	ADD COLUMN Usuario_ID INT,
 	ADD FOREIGN KEY (Usuario_ID) REFERENCES Usuario(Usuario_ID);
     
 ALTER TABLE Meta_Auto
