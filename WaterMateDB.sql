@@ -33,34 +33,34 @@ ALTER TABLE Usuario
 
 ALTER TABLE Dados_Usuario 
 	ADD COLUMN Data_Nascimento DATE,
-    ADD COLUMN Apelido VARCHAR(255),
-    ADD COLUMN CPF VARCHAR(11),
-    ADD COLUMN Telefone VARCHAR(12),
-    ADD COLUMN Peso_inicial DECIMAL(3,2),
-    ADD COLUMN Peso_atual DECIMAL(3,2),
-    ADD COLUMN Idade INT,
-    ADD COLUMN Altura FLOAT,
-    ADD COLUMN Tipo_Meta ENUM('Auto', 'Manual');
+    	ADD COLUMN Apelido VARCHAR(255),
+    	ADD COLUMN CPF VARCHAR(11),
+    	ADD COLUMN Telefone VARCHAR(12),
+    	ADD COLUMN Peso_inicial DECIMAL(3,2),
+    	ADD COLUMN Peso_atual DECIMAL(3,2),
+    	ADD COLUMN Idade INT,
+    	ADD COLUMN Altura FLOAT,
+    	ADD COLUMN Tipo_Meta ENUM('Auto', 'Manual');
     
 ALTER TABLE Registro_Consumo
 	ADD COLUMN Data_Registro DATE,
-    ADD COLUMN Quantidade_Consumida INT,
-    ADD COLUMN Percentual_atingido FLOAT,
-    ADD COLUMN Streak INT,
+    	ADD COLUMN Quantidade_Consumida INT,
+    	ADD COLUMN Percentual_atingido FLOAT,
+    	ADD COLUMN Streak INT,
     
-    ADD COLUMN Registro_Consumo_ID INT,
+    	ADD COLUMN Registro_Consumo_ID INT,
 	ADD FOREIGN KEY (Usuario_ID) REFERENCES Usuario(Usuario_ID);
     
 ALTER TABLE Meta_Auto
 	ADD COLUMN Auto_Meta INT,
     
-    ADD COLUMN Dados_Usuario_ID INT,
+    	ADD COLUMN Dados_Usuario_ID INT,
 	ADD FOREIGN KEY (Dados_Usuario_ID) REFERENCES Dados_Usuario(Dados_Usuario_ID);
     
 ALTER TABLE Meta_Manual
 	ADD COLUMN Manual_Meta INT, 
     
-    ADD COLUMN Dados_Usuario_ID INT,
+    	ADD COLUMN Dados_Usuario_ID INT,
 	ADD FOREIGN KEY (Dados_Usuario_ID) REFERENCES Dados_Usuario(Dados_Usuario_ID);
     
 	
