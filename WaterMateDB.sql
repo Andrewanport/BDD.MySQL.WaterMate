@@ -37,7 +37,7 @@ ALTER TABLE Dados_Usuario
     	ADD COLUMN Peso_Inicial DECIMAL(5,2),
     	ADD COLUMN Peso_Atual DECIMAL(5,2),
     	ADD COLUMN Idade INT,
-    	ADD COLUMN Altura DECIMAL(4,2),
+    	ADD COLUMN Altura INT,
     	ADD COLUMN Tipo_Meta ENUM('Automática', 'Manual');
     
 ALTER TABLE Registro_Consumo
