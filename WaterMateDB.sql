@@ -22,8 +22,7 @@ CREATE TABLE Registro_Consumo (
 	Registro_Consumo_ID INT AUTO_INCREMENT PRIMARY KEY
 );
 
-ALTER TABLE Usuario
-	ADD COLUMN Nome VARCHAR (255),
+ALTER TABLE Usuario,
     	ADD COLUMN Email VARCHAR (255) UNIQUE,
     	ADD COLUMN Senha VARCHAR (10),
     
